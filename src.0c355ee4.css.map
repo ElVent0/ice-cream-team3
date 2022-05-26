@@ -1,0 +1,1 @@
+{"version":3,"sources":["sass/_base.scss"],"names":[],"mappings":"AAAA,KACE,8BAAA,CACA,6BAAA,CACA","file":"src.0c355ee4.css","sourceRoot":"../src","sourcesContent":["body {\n  font-family: 'DM Sans', sans-serif;\n  font-family: 'Titan One', cursive;\n  font-size: 14px;\n}\n"]}
