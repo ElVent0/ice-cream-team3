@@ -1,0 +1,31 @@
+// Частина HEADER --------------------------------------------------
+
+.header {
+  background-color: var(--main-first);
+  padding-top: 8px;
+}
+.container {
+}
+.header__content--top {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.header__navigation {
+  display: flex;
+  margin-right: auto;
+}
+.header__logo-link {
+}
+.header__logo-image {
+}
+.header__button {
+  width: 20px;
+  height: 20px;
+}
+.header__burger-icon--first {
+}
+.header__burger-icon--second {
+}
+
+// Частина HERO --------------------------------------------------
