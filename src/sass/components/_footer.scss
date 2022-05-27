@@ -28,13 +28,24 @@
   margin-left: 28px;
 }
 .scl-media__link {
-    display: block;
+    display: flex;
     width: 32px;
     height: 32px;
     background-color: var(--main-social);
     border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: var(--default);
+
+    &:hover,
+    &:focus {
+    background-color: var(--main-text);
+    }
 }
 
+.scl-media__icon {
+  fill: currentColor;
+}
 
 .contact-number {
     display: flex;
