@@ -1,0 +1,26 @@
+h1,
+h2,
+h3,
+p,
+ul,
+input,
+textarea,
+fieldset,
+label,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
