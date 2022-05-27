@@ -1,0 +1,44 @@
+.advantages {
+    &__item {
+        margin-bottom: 32px;
+    }
+
+    &__title {
+        font-size: 36px;
+        line-height: 1.13;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #D41443;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.7;
+        color: #000000;
+
+    }
+
+    @media screen and (min-width:480px) {}
+
+    @media screen and (min-width:768px) {
+        display: flex;
+
+        &__item {
+            margin-bottom: 0;
+
+            &:not(:last-child) {
+                margin-right: 22px;
+            }
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        &__item {
+            &:not(:last-child) {
+                margin-right: 100px;
+            }
+        }
+    }
+}
