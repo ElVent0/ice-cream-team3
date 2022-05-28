@@ -1,0 +1,77 @@
+.mobile__menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  transition: transform 300ms, visibility 300ms;
+  background: #e17992;
+  padding-top: 60px;
+  z-index: 10000;
+}
+
+.close__btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.mobile__btn {
+  display: block;
+  width: 209px;
+  height: 44px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 19px;
+  background: #ffffff;
+  border: none;
+  border-radius: 22px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  align-items: center;
+  text-align: center;
+  &:focus,
+  &:hover {
+    color: #d41443;
+  }
+}
+
+.modal__vector {
+  //   position: relative;
+  margin-left: 15px;
+}
+
+.mobile__item {
+  padding: 11px 11px;
+  border-bottom: 1px solid #e18298;
+}
+
+.mobile__item:first-child {
+  border-top: 1px solid #e18298;
+}
+
+.mobile__link {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28px;
+  color: #ffffff;
+  &:hover,
+  &:focus {
+    color: #d41443;
+  }
+}
+.is-hidden {
+  transform: translateX(100%);
+  pointer-events: none;
+  visibility: hidden;
+}
