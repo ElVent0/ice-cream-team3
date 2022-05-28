@@ -3,6 +3,7 @@
 .header {
   background-color: var(--main-first);
   padding-top: 8px;
+  height: 100vh;
 }
 .container {
 }
@@ -29,3 +30,66 @@
 }
 
 // Частина HERO --------------------------------------------------
+.hero {
+  &__title{
+    font-weight: 400;
+  font-size: 26px;
+  line-height: 1.14em;
+  text-transform: uppercase;
+  color: var(--default);
+  }
+  &__aftertitle{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 0.96;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+}
+.hero__products,
+.hero__meta{
+  border: none;
+  height: 24px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-size: 8px;
+  cursor: pointer;
+}
+.hero__products {
+  color: var(--default);
+  background-color: var(--main-text);
+  width: 62.8px;
+  line-height: 10px;
+  margin-right: 8px;
+}
+.hero__meta {
+  color: var(--main-text);
+  background-color: var(--default);
+  width: 81.2px;
+  line-height: 10px;
+}
+.hero__button {
+  margin-top: 20px;
+  display: flex;
+}
+.hero__text {
+  bottom: 158px;
+  z-index: 5;
+  position: absolute;
+}
+.eclipse {
+  position: absolute;
+  right: 0;
+  bottom: 75px;
+}
+.ice {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+}
