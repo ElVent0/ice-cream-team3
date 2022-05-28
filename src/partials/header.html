@@ -29,8 +29,23 @@
             </div>
           </div>
           <div class="hero__image">
-            <img class="eclipse" src="/images/hero-bg-circle-mob.png" />
-            <img class="ice" src="/images/hero-icecream-mob.png" />
+            <picture>
+              <source
+              srcset="/images/hero-bg-circle-mob@2x.png 1x ,/images/hero-bg-circle-mob@2x.png 2x"
+              media="(min-width: 320px)"
+              >
+              <img class="eclipse"
+            srcset="/images/hero-bg-circle-mob@2x.png 1x ,/images/hero-bg-circle-mob@2x.png 2x" 
+            src="/images/hero-bg-circle-mob.png" />
+          </picture>
+          <picture>
+            <source
+              srcset="/images/hero-icecream-mob.png 1x, /images/hero-icecream-mob@2x.png 2x"
+              media="(min-width: 320px)">
+            <img class="ice" 
+            srcset="/images/hero-icecream-mob.png 1x, /images/hero-icecream-mob@2x.png 2x"
+            src="/images/hero-icecream-mob.png" />
+          </picture>
           </div>
       </section>
     </div>
