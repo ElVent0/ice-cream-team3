@@ -2,6 +2,10 @@
   background: var(--main-bg-second);
 }
 
+.contacts {
+  margin-bottom: 32px;
+}
+
 .contacts-card {
   max-width: 280px;
   height: 412px;
@@ -109,8 +113,7 @@
   color: #907e82;
 }
 
-.buttons-wrap {
-  padding-top: 32px;
+.conteiner--contacts-padding {
   padding-bottom: 48px;
 }
 
