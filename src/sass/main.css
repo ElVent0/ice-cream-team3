@@ -98,7 +98,6 @@ a {
 .header {
   background-color: var(--main-first);
   padding-top: 8px;
-  height: 100vh;
 }
 
 .header__content--top {
@@ -117,6 +116,10 @@ a {
   height: 20px;
 }
 
+.hero {
+  position: relative;
+  min-height: 452px;
+}
 .hero__title {
   font-weight: 400;
   font-size: 26px;
@@ -176,4 +179,16 @@ a {
   bottom: 158px;
   z-index: 5;
   position: absolute;
+}
+
+.eclipse {
+  position: absolute;
+  right: -20px;
+  bottom: 75px;
+}
+
+.ice {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
 }/*# sourceMappingURL=main.css.map */

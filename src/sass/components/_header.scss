@@ -3,7 +3,6 @@
 .header {
   background-color: var(--main-first);
   padding-top: 8px;
-  height: 100vh;
 }
 .container {
 }
@@ -31,24 +30,26 @@
 
 // Частина HERO --------------------------------------------------
 .hero {
-  &__title{
-    @include font-style(400,26px,1.14em,0);
-  text-transform: uppercase;
-  color: var(--default);
+  position: relative;
+  min-height: 452px;
+  &__title {
+    @include font-style(400, 26px, 1.14em, 0);
+    text-transform: uppercase;
+    color: var(--default);
   }
-  &__aftertitle{
-    @include font-style(400,48px,0.96em,0);
+  &__aftertitle {
+    @include font-style(400, 48px, 0.96em, 0);
     font-style: normal;
     text-transform: uppercase;
     color: var(--main-text);
   }
 }
 .hero__products,
-.hero__meta{
-  @include font-style(400,8px,0,0);
+.hero__meta {
+  @include font-style(400, 8px, 0, 0);
   border: none;
   height: 24px;
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-style: normal;
   align-items: center;
   text-align: center;
@@ -80,7 +81,7 @@
 }
 .eclipse {
   position: absolute;
-  right: 0;
+  right: -20px;
   bottom: 75px;
 }
 .ice {
