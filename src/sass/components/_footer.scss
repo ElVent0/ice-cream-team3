@@ -27,10 +27,10 @@
     @include font-style(400, 18px, 1.2, null);
     color: var(--main-second);
     @media screen and (min-width: 768px) {
-@include font-style(400, 26px, 1.2, 0.04em);
+    @include font-style(400, 26px, 1.2, 0.04em);
  }
-  @media screen and (min-width: 1280px) {
-@include font-style(400, 30px, 1.1, 0.04em);
+    @media screen and (min-width: 1280px) {
+    @include font-style(400, 30px, 1.1, 0.04em);
   }
 }
  
@@ -39,11 +39,11 @@
     @include font-style(400, 34px, 1.1, 0.03em);
     color: var(--main-text);
     margin-top: 16px;
-     @media screen and (min-width: 768px) {
- @include font-style(400, 48px, 1.1, 0.06em)
+    @media screen and (min-width: 768px) {
+    @include font-style(400, 48px, 1.1, 0.06em)
  }
-  @media screen and (min-width: 1280px) {
- @include font-style(400, 58px, 1.1, 0.06em)
+    @media screen and (min-width: 1280px) {
+    @include font-style(400, 58px, 1.1, 0.06em)
   }
 }
 
@@ -61,6 +61,12 @@
 
 .scl-media__item + .scl-media__item {
   margin-left: 28px;
+  @media screen and (min-width: 768px) {
+      margin-left: 30px;
+  }
+   @media screen and (min-width: 1280px) {
+       margin-left: 24px;
+   }
 }
 .scl-media__link {
     display: flex;
@@ -86,10 +92,10 @@
 .contact-number {
     display: flex;
     justify-content: flex-end;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
      @media screen and (min-width: 768px) {
-         padding-bottom: 0;
+         margin-bottom: 0;
      }
  }
 
@@ -97,6 +103,12 @@
     font-family: 'DM Sans';
     @include font-style(700, 12px, 1.8, 0);
     color: var(--default-text-main);
+    @media screen and (min-width: 768px) {
+        @include font-style(700, 14px, 1.8, 0);
+    }
+    @media screen and (min-width: 1280px) {
+        @include font-style(700, 16px, 1.8, 0.02em);
+    }
 }
 
 .contact-number__link {
@@ -111,6 +123,12 @@
     }
     cursor: pointer;
     margin-left: 2px;
+     @media screen and (min-width: 768px) {
+        @include font-style(700, 14px, 1.8, 0);
+    }
+     @media screen and (min-width: 1280px) {
+        @include font-style(700, 16px, 1.8, 0.02em);
+    }
 }
 
 .copyright {
