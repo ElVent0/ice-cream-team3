@@ -14,31 +14,28 @@
 
 .reviews__text {
     min-width: 280px;
-    background-color: #FAFAFA;
+    background-color: var(--bg-fourth);
     padding: 74px 50px 17px 50px;
     min-height: auto;
 }
 
 .reviews__description {
     font-family: DM Sans, sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 2.58;
+    @include font-style (500, 12px, 2.58, null);
     text-align: center;
-    color: black;
+    color: var(--default-text-main);
 
     background: repeating-linear-gradient(transparent 0px,
         transparent 30px,
-        #E1E1E1 1px,
-        #E1E1E1 31px);
+        var(--line) 1px,
+        var(--line) 31px);
 }
 
 .reviews__description::before {
     content: '';
     display: block;
-    width: 54px;
-    height: 40px;
-    background-image: url(images/review-before.svg);
+    // width: 54px;
+    // height: 40px;
 }
 
 .reviews__list {
@@ -60,14 +57,12 @@
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background-color: #C7133E;
+    background-color: var(--main-text-hover);
 }
 
 .reviews__title {
     font-family: DM Sans, sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.86;
+    @include font-style (500, 14px, 1.86, null);
     text-align: center;
-    color: #000000;
+    color: var(--default-text-main);
 }
