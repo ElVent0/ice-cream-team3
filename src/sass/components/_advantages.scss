@@ -1,8 +1,13 @@
-.advantages {
-    &__item {
+.advantages-section{
+    background-color: var(--main-bg-second);
+}
+.advantages {    
+    &__item { 
+        display: inline-block;
+        max-width: 230px;
         margin-bottom: 32px;
         &::before{
-            display: block;
+            display: inline-block;
             margin-bottom: 16px;
             content: "";
             background-repeat: no-repeat;
@@ -47,7 +52,7 @@
             }
     }
 
-    &__title {
+    &__title {        
         font-family: 'Titan One';
         @include font-style(null, 36, 1.14, 0.04em); 
         text-transform: uppercase;
@@ -55,19 +60,22 @@
         margin-bottom: 10px;
     }
 
-    &__text {
+    &__text {       
         font-family: 'DM Sans';
         @include font-style(700, 12, 1.7, null);
         color: var(--default-text-main);
     }
 
     @media screen and (min-width:768px) {
-        display: flex;
-        &__item {
+        display: inline-flex;
+        justify-content: flex-start;        
+        
+        &__item { 
+            max-width: 180px;
             margin-bottom: 0;
             &:not(:last-child) {
                     margin-right: 4px;
-                }
+                }            
         
             &::before {                
                 margin-bottom: 36px;                
@@ -84,6 +92,7 @@
 
     @media screen and (min-width:1280px) {
         &__item {
+            max-width: 288px;
             &:not(:last-child) {
                 margin-right: 106px;
             }
