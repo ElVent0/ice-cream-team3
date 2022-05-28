@@ -1,5 +1,5 @@
 .mobile__menu {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   top: 50%;
@@ -8,6 +8,7 @@
   transition: transform 300ms, visibility 300ms;
   background: #e17992;
   padding-top: 60px;
+  z-index: 10000;
 }
 
 .close__btn {
@@ -73,7 +74,6 @@
 }
 .is-hidden {
   transform: translateX(100%);
-  //   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
