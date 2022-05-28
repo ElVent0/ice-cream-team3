@@ -6,9 +6,6 @@
   background-size: contain;}
 
 .about__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
   padding-top: 40px;
   align-items: center;
@@ -16,7 +13,10 @@
 }
 
 .about__title-box {
-  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .about__title-label {
@@ -60,7 +60,6 @@
   @include font-style(500, 12px, 1.6, null);
   font-family: 'DM Sans';
   color: var(--default-text-second);
-  text-align: center;
 }
 
 .about__desc:not(:last-child) {
@@ -73,8 +72,8 @@
 }
 
 .about__button {
-  width: 176px;
-  height: 44px;
+  min-width: 176px;
+  padding: 17px 37px 17px 43px;
   background-color: var(--default);
   border-radius: 22px;
   display: flex;
@@ -86,8 +85,14 @@
   font-family: 'DM Sans';
   text-align: center;
   color: var(--main-text);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: var(--default-hover);
+  }
 }
 
 .about__button-icon {
-  display: none;
+  margin-left: 18px;
 }
