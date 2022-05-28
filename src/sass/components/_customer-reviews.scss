@@ -3,6 +3,10 @@
     margin-bottom: 48px;
 }
 
+.reviews__box {
+    position: relative;
+}
+
 .reviews__info {
     display: flex;
     flex-direction: column;
@@ -12,23 +16,14 @@
     margin-bottom: 32px;
 }
 
-.reviews__text {position: relative;
+.reviews__text {
+    position: relative;
     width: 280px;
-    background-color: var(--bg-fourth);}
-
-.reviews__description {
-    min-height: auto;
-    padding: 43px 58px 26px 65px;
-    font-family: DM Sans, sans-serif;
-    @include font-style (500, 12px, 2.58, null);
-    text-align: center;
-    color: var(--default-text-main);
-
+    background-color: var(--bg-fourth);
 }
 
 .reviews__gradient {
     position: absolute;
-    z-index: 3;
     min-width: 180px;
     height: 240px;
     left: 50px;
@@ -41,14 +36,25 @@
 
 .reviews__description::before {
     content: '';
-    display: inline-block;
+    display: block;
     width: 54px;
     height: 40px;
-    background-color: palevioletred;
+    background-image: url(/images/review-before.svg);
 
     position: absolute;
+    z-index: 0;
     left: 53px;
     top: 30px;
+}
+
+.reviews__description {
+    min-height: auto;
+    padding: 43px 58px 26px 65px;
+    font-family: DM Sans, sans-serif;
+    @include font-style (500, 12px, 2.58, null);
+    text-align: center;
+    color: var(--default-text-main);
+
 }
 
 .reviews__list {
@@ -78,4 +84,48 @@
     @include font-style (500, 14px, 1.86, null);
     text-align: center;
     color: var(--default-text-main);
+    margin-bottom: 16px;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+}
+
+.slick-dots>li {
+    margin-left: 18px;
+    width: 12px;
+    height: 12px;
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.slick-dots>li>button {
+    // display: none;
+}
+
+.reviews__nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.reviews__element {
+    display: flex;
+    align-items: center;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    &:first-child {
+        background-color: transparent;
+    }
+    &+& {
+        margin-left: 18px;
+    }
+}
+
+.reviews__icon {
+    fill: var(--main-btn);
 }
