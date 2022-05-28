@@ -20,12 +20,18 @@
 .header__logo-image {
 }
 .header__button {
+  background-color: transparent;
+  border: none;
   width: 20px;
   height: 20px;
+  fill: var(--default);
 }
-.header__burger-icon--first {
+.header__burger-icon {
+  fill: var(--default);
 }
-.header__burger-icon--second {
+
+.header__burger-svg {
+  fill: var(--default);
 }
 
 // Частина HERO --------------------------------------------------
