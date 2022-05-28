@@ -72,16 +72,15 @@
 }
 
 .about__button {
+  display: flex;
+  align-items: center;
   min-width: 176px;
   padding: 17px 37px 17px 43px;
   background-color: var(--default);
   border-radius: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border: none;
 
-  @include font-style(700, 14px, 1.3, null);
+  @include font-style(700, 14px, 1.29, null);
   font-family: 'DM Sans';
   text-align: center;
   color: var(--main-text);
@@ -95,4 +94,5 @@
 
 .about__button-icon {
   margin-left: 18px;
+  padding: 0;
 }
