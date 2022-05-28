@@ -54,7 +54,7 @@
 
     &__title {        
         font-family: 'Titan One';
-        @include font-style(null, 36, 1.14, 0.04em); 
+        @include font-style(null, 36px, 1.14, 0.04em); 
         text-transform: uppercase;
         color:var(--main-text);
         margin-bottom: 10px;
@@ -62,7 +62,7 @@
 
     &__text {       
         font-family: 'DM Sans';
-        @include font-style(700, 12, 1.7, null);
+        @include font-style(700, 12px, 1.7, null);
         color: var(--default-text-main);
     }
 
@@ -82,11 +82,11 @@
             } 
         }
         &__title {
-            @include font-style(null, 48, null, 0.04em);
+            @include font-style(null, 48px, null, 0.04em);
             margin-bottom: 13px;
         }
         &__text {            
-            @include font-style(null, 14, 1.74,null);
+            @include font-style(null, 14px, 1.74,null);
         }
     }
 
@@ -101,11 +101,11 @@
             } 
         }
         &__title {
-            @include font-style(null, 58, null, 0.04em);
+            @include font-style(null, 58px, null, 0.04em);
             margin-bottom: 16px;
         }
         &__text {            
-            @include font-style(null, 16, 1.76, 0.02em);
+            @include font-style(null, 16px, 1.76, 0.02em);
         }
     }
 }
