@@ -1,5 +1,6 @@
 .advantages-section {
     padding-top: 80px;
+    padding-bottom: 80px;
     background-color: var(--main-bg-second);
 }
 
@@ -7,7 +8,10 @@
     &__item {
         display: inline-block;
         max-width: 230px;
-        margin-bottom: 32px;
+        &:not(:last-child) {
+                margin-bottom: 32px;
+            }
+       
 
         &::before {
             display: inline-block;
@@ -83,6 +87,7 @@
             margin-bottom: 0;
 
             &:not(:last-child) {
+                margin-bottom: 0px;
                 margin-right: 4px;
             }
 
