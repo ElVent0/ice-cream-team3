@@ -32,33 +32,28 @@
 // Частина HERO --------------------------------------------------
 .hero {
   &__title{
-    font-weight: 400;
-  font-size: 26px;
-  line-height: 1.14em;
+    @include font-style(400,26px,1.14em,0);
   text-transform: uppercase;
   color: var(--default);
   }
   &__aftertitle{
+    @include font-style(400,48px,0.96em,0);
     font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 0.96;
     text-transform: uppercase;
     color: var(--main-text);
   }
 }
 .hero__products,
 .hero__meta{
+  @include font-style(400,8px,0,0);
   border: none;
   height: 24px;
   font-family: "DM Sans";
   font-style: normal;
-  font-weight: 400;
   align-items: center;
   text-align: center;
   justify-content: center;
   border-radius: 20px;
-  font-size: 8px;
   cursor: pointer;
 }
 .hero__products {

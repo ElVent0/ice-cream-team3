@@ -121,30 +121,34 @@ a {
   font-weight: 400;
   font-size: 26px;
   line-height: 1.14em;
+  letter-spacing: 0;
   text-transform: uppercase;
   color: var(--default);
 }
 .hero__aftertitle {
-  font-style: normal;
   font-weight: 400;
   font-size: 48px;
-  line-height: 0.96;
+  line-height: 0.96em;
+  letter-spacing: 0;
+  font-style: normal;
   text-transform: uppercase;
   color: var(--main-text);
 }
 
 .hero__products,
 .hero__meta {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 0;
+  letter-spacing: 0;
   border: none;
   height: 24px;
   font-family: "DM Sans";
   font-style: normal;
-  font-weight: 400;
   align-items: center;
   text-align: center;
   justify-content: center;
   border-radius: 20px;
-  font-size: 8px;
   cursor: pointer;
 }
 
