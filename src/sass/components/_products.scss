@@ -5,6 +5,10 @@
     padding-top: 40px;
     padding-bottom: 60px;
   }
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   &__label {
     margin-bottom: 15px;
@@ -16,6 +20,11 @@
       font-family: 'Titan One';
       @include font-style(400, 26px, 1.15, null);
       margin-bottom: 18px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-family: 'Titan One';
+      @include font-style(400, 30px, 1.13, 0.04em);
+      margin-bottom: 16px;
     }
   }
 
@@ -30,25 +39,42 @@
       @include font-style(400, 48px, 1.14, 0.04em);
       margin-bottom: 16px;
     }
+    @media screen and (min-width: 1280px) {
+      font-family: 'Titan One';
+      @include font-style(400, 58px, 1.13, 0.06em);
+      margin-bottom: 0;
+    }
   }
   &__list {
     @media screen and (min-width: 768px) {
       display: flex;
       margin-left: -16px;
     }
+    @media screen and (min-width: 1280px) {
+      margin-left: -32px;
+    }
   }
   &__item {
     position: relative;
     padding-top: 140px;
     @media screen and (min-width: 768px) {
-      width: calc(100% / 3 -16px);
+      width: calc(100% / 3 - 16px);
       margin-left: 16px;
+      padding-top: 138px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: calc(100% / 3 - 32px);
+      margin-left: 32px;
+      padding-top: 261px;
     }
   }
   &__item-title {
     @include font-style(400, 20px, 1.15, 0.04em);
     text-align: center;
     text-transform: uppercase;
+    @media screen and (min-width: 1280px) {
+      @include font-style(400, 30px, 1.13, 0.04em);
+    }
 
     &::after {
       content: '';
@@ -85,6 +111,10 @@
     @media screen and (min-width: 768px) {
       display: inline-block;
     }
+    @media screen and (min-width: 1280px) {
+      @include font-style(700, 16px, 1.76, 0.04em);
+      margin-bottom: 60px;
+    }
   }
   &__thumb {
     width: 100%;
@@ -104,6 +134,13 @@
       padding-left: 32px;
       padding-top: 118px;
       padding-right: 32px;
+    }
+    @media screen and (min-width: 1280px) {
+      height: 535px;
+      padding-left: 77px;
+      padding-top: 165px;
+      padding-right: 76px;
+      padding-bottom: 60px;
     }
 
     &--first {
@@ -125,6 +162,10 @@
         @media screen and (min-width: 768px) {
           width: 224px;
           height: 224px;
+        }
+        @media screen and (min-width: 1280px) {
+          width: 394px;
+          height: 394px;
         }
       }
     }
@@ -148,6 +189,10 @@
           width: 224px;
           height: 224px;
         }
+        @media screen and (min-width: 1280px) {
+          width: 394px;
+          height: 394px;
+        }
       }
     }
     &--third {
@@ -169,6 +214,10 @@
         @media screen and (min-width: 768px) {
           width: 224px;
           height: 224px;
+        }
+        @media screen and (min-width: 1280px) {
+          width: 394px;
+          height: 394px;
         }
       }
     }
