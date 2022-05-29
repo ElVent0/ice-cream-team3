@@ -33,24 +33,18 @@
   border-radius: 22px;
   font-family: 'DM Sans';
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
+  @include font-style(700, 16px, 1.31, null);
   align-items: center;
   text-align: center;
-  &:focus,
-  &:hover {
-    color: #d41443;
-  }
+  color: var(--main-text);
 }
 
 .modal__vector {
-  //   position: relative;
   margin-left: 15px;
 }
 
 .mobile__item {
-  padding: 11px 11px;
+  padding: 11px 20px;
   border-bottom: 1px solid #e18298;
 }
 
@@ -61,9 +55,7 @@
 .mobile__link {
   font-family: 'DM Sans';
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.28px;
+  @include font-style(700, 14px, 1.28, null);
   color: #ffffff;
   &:hover,
   &:focus {

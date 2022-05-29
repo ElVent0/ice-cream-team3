@@ -57,9 +57,8 @@
   background: var(--bg-second);
 
   font-family: 'DM Sans';
-  font-size: 12px;
-  line-height: 1.86;
   letter-spacing: 0.04em;
+  @include font-style(null, 12px, 1.86, null);
   color: var(--default);
   margin-bottom: 20px;
 
@@ -90,6 +89,7 @@
   font-size: 12px;
   line-height: 1.86;
   letter-spacing: 0.04em;
+  @include font-style(500, 12px, 1.86, 0.04em);
 
   color: var(--default-text-main);
   margin-bottom: 8px;
@@ -106,9 +106,7 @@
 
 .contacts-card__city-descr {
   font-family: 'DM Sans';
-  font-size: 12px;
-  line-height: 1.5;
-
+  @include font-style(null, 12px, 1.5, null);
   color: #907e82;
   padding-bottom: 24px;
 
@@ -149,6 +147,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
+  @include font-style(500, 12px, 1.86, null);
 
   color: var(--default-text-main);
 
@@ -163,9 +162,7 @@
 
 .working-time__time {
   font-family: 'DM Sans';
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.86;
+  @include font-style(500, 12px, 1.86, null);
 
   color: var(--main-second);
 
@@ -180,9 +177,8 @@
 
 .contacts-card__connect {
   font-family: 'DM Sans';
-  font-size: 12px;
-  line-height: 1.5;
   padding-top: 24px;
+  @include font-style(null, 12px, 1.5, null);
 
   @media screen and (min-width: 768px) {
     padding-top: 32px;
@@ -247,9 +243,7 @@
   border-radius: 22px;
 
   font-family: 'DM Sans';
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
+  @include font-style(700, 16px, 1.31, null);
 
   &--location {
     background-color: var(--main-btn);

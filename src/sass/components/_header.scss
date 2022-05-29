@@ -32,9 +32,8 @@
   right: 20px;
   cursor: pointer;
   color: var(--main-text);
-  font-size: 25px;
-  font-weight: 700;
   border-radius: 50px;
+  @include font-style(700, 25px, 1.15, null);
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   -khtml-border-radius: 50px;
@@ -70,6 +69,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .header__burger-svg {
@@ -82,7 +82,7 @@
 // Частина HERO --------------------------------------------------
 .hero {
   position: relative;
-  min-height: 452px;
+  min-height: 444px;
   &__title {
     @include font-style(400, 26px, 1.14em, 0);
     text-transform: uppercase;
@@ -99,7 +99,6 @@
 .hero__meta {
   @include font-style(400, 8px, 0, 0);
   border: none;
-  height: 24px;
   font-family: 'DM Sans';
   font-style: normal;
   align-items: center;
@@ -111,15 +110,23 @@
 .hero__products {
   color: var(--default);
   background-color: var(--main-text);
-  width: 62.8px;
   line-height: 10px;
   margin-right: 8px;
+  padding: 11px 23px;
+  &:focus,
+  &:hover {
+    background-color: var(--main-text-hover);
+  }
 }
 .hero__meta {
   color: var(--main-text);
   background-color: var(--default);
-  width: 81.2px;
   line-height: 10px;
+  padding: 11px 23px;
+  &:focus,
+  &:hover {
+    background-color: var(--default-hover);
+  }
 }
 .hero__button {
   margin-top: 20px;
