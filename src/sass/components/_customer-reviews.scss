@@ -1,11 +1,14 @@
 .reviews {
     margin-top: 80px;
     margin-bottom: 48px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 80px;
+    }
 }
 
-.reviews__box {
-    position: relative;
-}
+// .reviews__box {
+//     position: relative;
+// }
 
 .reviews__info {
     display: flex;
@@ -15,14 +18,17 @@
 
 .reviews__photo {
     margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+    }
 }
 
-.reviews__text {
-    position: relative;
-    min-width: 280px;
-    background-color: var(--bg-fourth);
-    padding: 43px 58px 26px 65px;
-}
+// .reviews__text {
+//     position: relative;
+//     min-width: 280px;
+//     background-color: var(--bg-fourth);
+//     padding: 43px 58px 26px 65px;
+// }
 
 // .reviews__gradient {
 //     position: absolute;
@@ -36,32 +42,54 @@
 //             transparent 31px);
 // }
 
-.reviews__description::before {
-    content: '';
-    display: inline-block;
-    width: 54px;
-    height: 40px;
-    background-image: url(/images/review-before.svg);
-
-    position: absolute;
-    z-index: 0;
-    left: 53px;
-    top: 30px;
+.reviews__text {
+    min-width: 280px;
+    height: auto;
+    background-color: var(--bg-fourth);
+    padding: 43px 58px 26px 65px;
+    @media screen and (min-width: 768px) {
+        width: 620px;
+        padding: 37px 55px 44px 51px;
+    }
 }
 
 .reviews__description {
+    position: relative;
+    z-index: 1;
+    min-width: 157px;
     min-height: auto;
     // padding: 43px 58px 26px 65px;
     font-family: DM Sans, sans-serif;
     @include font-style (500, 12px, 2.58, null);
     text-align: center;
     color: var(--default-text-main);
+    background-size: auto;
     background: repeating-linear-gradient(
                 transparent 0px,
                 transparent 30px,
                 var(--line) 1px,
                 var(--line) 31px);
-
+    @media screen and (min-width: 768px) {
+        width: 514px;
+        height: 93px;
+        @include font-style (500, 14px, 2.16, 0.04em);
+    }
+    &::before {
+            content: '';
+            display: inline-block;
+            width: 54px;
+            height: 40px;
+            background-image: url(/images/review-before.svg);
+    
+            position: absolute;
+            z-index: -1;
+            top: -13px;
+            left: -12px;     
+            @media screen and (min-width: 768px) {
+                top: -17px;
+                left: -45px;
+            }   
+        }
 }
 
 .reviews__list {
@@ -69,6 +97,9 @@
     align-items: center;
     margin-top: 16px;
     margin-bottom: 16px;
+    @media screen and (min-width: 768px) {
+        margin-top: 4px;
+    }
 }
 
 .reviews__dots {
@@ -92,6 +123,10 @@
     text-align: center;
     color: var(--default-text-main);
     margin-bottom: 16px;
+    @media screen and (min-width: 768px) {
+        @include font-style (500, 16px, 1.86, null);
+        margin-bottom: 32px;
+    }
 }
 
 .slick-dots {
