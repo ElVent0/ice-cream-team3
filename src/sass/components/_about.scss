@@ -35,11 +35,11 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 20px;
+    padding-right: 34px;
   }
 
     @media screen and (min-width: 1280px) {
-    padding-top: 60px;
-    padding-bottom: 39px;
+    padding: 60px 16px 39px 16px;
     }
 
 }
@@ -104,11 +104,11 @@
 
     @media screen and (min-width: 1280px) {
       align-items: center;
-     
     }
   
 }
 .about__img {
+  display: block;
   width: 100%;
   max-width: 280px;
   margin-bottom: 40px;
@@ -132,29 +132,30 @@
     width: 334px;
   }
 
-    @media screen and (min-width: 768px) {
-      width: 463px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 463px;
+  }
   
 }
-
+.about__list {
+  list-style: none;
+}
 .about__item{
   
   &:first-child {
     margin-bottom: 31px;
+@media screen and (min-width: 768px) {
+    margin-bottom: 29px;
+  }
+
   }
   &:nth-child(n+3) {
     margin-top: 20px;
 
-    
-
-  @media screen and (min-width: 768px) {
-        margin-top: 25px;
-        
+    @media screen and (min-width: 768px) {
+      margin-top: 23px;     
+    }
   }
-  
-  }
- 
 }
 
 
@@ -183,10 +184,11 @@
 }
 
 .about__button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   margin-top: 20px;
   min-width: 176px;
+  height: 44px;
   padding: 17px 37px 17px 43px;
   background-color: var(--default);
   border-radius: 22px;
