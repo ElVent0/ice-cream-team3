@@ -44,12 +44,12 @@
 
 .reviews__text {
     min-width: 280px;
-    height: auto;
+    max-height: 380px;
     background-color: var(--bg-fourth);
-    padding: 43px 58px 26px 65px;
+    padding: 43px 50px 17px 50px;
     @media screen and (min-width: 768px) {
         width: 620px;
-        padding: 37px 55px 44px 51px;
+        padding: 37px 6px 36px 6px;
     }
 }
 
@@ -57,8 +57,8 @@
     position: relative;
     z-index: 1;
     min-width: 157px;
-    min-height: auto;
-    // padding: 43px 58px 26px 65px;
+    height: auto;
+    padding: 0 8px 9px 15px;
     font-family: DM Sans, sans-serif;
     @include font-style (500, 12px, 2.58, null);
     text-align: center;
@@ -70,8 +70,9 @@
                 var(--line) 1px,
                 var(--line) 31px);
     @media screen and (min-width: 768px) {
-        width: 514px;
-        height: 93px;
+        min-width: 514px;
+        // height: 93px;
+        padding: 0px 49px 8px 45px;
         @include font-style (500, 14px, 2.16, 0.04em);
     }
     &::before {
@@ -84,10 +85,10 @@
             position: absolute;
             z-index: -1;
             top: -13px;
-            left: -12px;     
+            left: 3px;     
             @media screen and (min-width: 768px) {
                 top: -17px;
-                left: -45px;
+                left: 0px;
             }   
         }
 }
