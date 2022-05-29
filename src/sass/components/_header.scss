@@ -24,14 +24,17 @@
   border: none;
   width: 20px;
   height: 20px;
-  fill: var(--default);
-}
-.header__burger-icon {
-  fill: var(--default);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header__burger-svg {
-  fill: var(--default);
+  stroke: var(--main-text);
+}
+
+.header__burger-icon {
 }
 
 // Частина HERO --------------------------------------------------
