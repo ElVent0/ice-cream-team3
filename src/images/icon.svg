@@ -13,9 +13,9 @@
 <path d="M34.472 15.381c0.633-0.649 0.572-1.644-0.136-2.222l-15.601-12.734c-0.708-0.578-1.843-0.566-2.537 0.027l-15.654 13.386c-0.693 0.593-0.727 1.587-0.075 2.219l0.392 0.381c0.651 0.632 1.704 0.707 2.349 0.168l1.17-0.977v14.308c0 0.878 0.763 1.588 1.703 1.588h6.102c0.94 0 1.703-0.711 1.703-1.588v-10.010h7.783v10.010c-0.014 0.877 0.659 1.588 1.6 1.588h6.467c0.94 0 1.703-0.711 1.703-1.588v-14.106c0 0 0.323 0.264 0.722 0.591s1.234 0.065 1.866-0.585l0.444-0.455z"></path>
 </symbol>
 <symbol id="icon-Burger-btn" viewBox="0 0 32 32">
-<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M0 6.4h32"></path>
-<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M0 16h32"></path>
-<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M0 25.6h32"></path>
+<path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M0 6.4h32"></path>
+<path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M0 16h32"></path>
+<path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M0 25.6h32"></path>
 </symbol>
 <symbol id="icon-Burger-btn-close" viewBox="0 0 32 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.519 2l26.963 28"></path>
@@ -29,6 +29,9 @@
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.542 3.2l16.825 12.8-16.825 12.8"></path>
 <symbol id="icon-arrow" viewBox="0 0 24 28">
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.171 3.2l14.17 12.8-14.17 12.8"></path>
+</symbol>
+<symbol id="icon-btn-vector-main" viewBox="0 0 26 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.172 3.2l14.169 12.8-14.169 12.8"></path>
 </symbol>
 </defs>
 </svg>

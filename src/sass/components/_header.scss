@@ -3,89 +3,296 @@
 .header {
   background-color: var(--main-first);
   padding-top: 8px;
+  &__content--top {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+  &__navigation {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    @media screen and (max-width: 1279px) {
+      display: none;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'DM Sans';
+    @include font-style(700, 16px, 1.31, null);
+  }
+  &__link {
+    color: var(--default);
+    &:focus,
+    &:hover {
+      color: var(--main-text);
+    }
+  }
+  &__button {
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: auto;
+    @media screen and (min-width: 768px) {
+      margin-right: 32px;
+    }
+    &-menu {
+      width: 160px;
+      height: 44px;
+      background-color: var(--default);
+      color: var(--main-text);
+      font-family: 'DM Sans';
+      @include font-style(700, 16px, 1.31, null);
+      border-radius: 22px;
+      cursor: pointer;
+      border: none;
+      &:focus,
+      &:hover {
+        background-color: var(--default-hover);
+      }
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+  &__burger-svg {
+    stroke: var(--main-text);
+  }
+  &__modal-vector {
+    margin-left: 12px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 37px;
+  }
 }
-.container {
-}
-.header__content--top {
-  display: flex;
-  align-items: center;
-  height: 50px;
-}
-.header__navigation {
-  display: flex;
-  margin-right: auto;
-}
-.header__logo-link {
-}
-.header__logo-image {
-}
-.header__button {
-  width: 20px;
-  height: 20px;
-}
-.header__burger-icon--first {
-}
-.header__burger-icon--second {
-}
-
-// Частина HERO --------------------------------------------------
 .hero {
   position: relative;
   min-height: 452px;
+  @include tablet {
+    min-height: 334px;
+  }
+  @include desktop {
+    min-height: 594px;
+  }
   &__title {
     @include font-style(400, 26px, 1.14em, 0);
     text-transform: uppercase;
     color: var(--default);
+    @include tablet {
+      @include font-style(400, 22px, 1.14em, 0.04em);
+    }
+    @include desktop {
+      @include font-style(400, 38px, 1.14em, 0.04em);
+    }
   }
   &__aftertitle {
     @include font-style(400, 48px, 0.96em, 0);
     font-style: normal;
     text-transform: uppercase;
     color: var(--main-text);
+    @include tablet {
+      @include font-style(400, 34px, 0.9em, 0.04em);
+    }
+    @include desktop {
+      @include font-style(400, 58px, 0.9em, 0.04em);
+    }
   }
 }
 .hero__products,
 .hero__meta {
-  @include font-style(400, 8px, 0, 0);
+  @include font-style(400, 8px, 1.25em, 0);
   border: none;
-  height: 24px;
   font-family: 'DM Sans';
   font-style: normal;
   align-items: center;
   text-align: center;
+  display: flex;
+  padding: 11px 23px;
   justify-content: center;
   border-radius: 20px;
   cursor: pointer;
+  @include desktop {
+    @include font-style(400, 14px, 1.3em, 0);
+    height: 40px;
+  }
 }
 .hero__products {
   color: var(--default);
   background-color: var(--main-text);
-  width: 62.8px;
   line-height: 10px;
   margin-right: 8px;
+  &:hover,
+  &:focus {
+    background-color: var(--main-text-hover);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @include desktop {
+    width: 107px;
+  }
 }
 .hero__meta {
   color: var(--main-text);
   background-color: var(--default);
-  width: 81.2px;
   line-height: 10px;
+  &:hover,
+  &:focus {
+    background-color: var(--default-hover);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @include desktop {
+    width: 138px;
+  }
 }
 .hero__button {
   margin-top: 20px;
   display: flex;
 }
 .hero__text {
-  bottom: 158px;
+  bottom: 35%;
   z-index: 5;
   position: absolute;
+  @include tablet {
+    bottom: 52%;
+  }
 }
+.hero__number {
+  display: none;
+  @include tablet {
+    display: block;
+    position: absolute;
+    top: 42px;
+    right: 0;
+    &--container {
+      position: relative;
+      &:not(:last-child) {
+        margin-bottom: 17px;
+      }
+    }
+    &--eclipse {
+      width: 16px;
+      height: 16px;
+      background-color: var(--default);
+      border-radius: 50%;
+      position: absolute;
+      top: -3px;
+      right: -3px;
+      @include desktop {
+        width: 30px;
+        height: 30px;
+        top: -6px;
+        right: -6px;
+      }
+    }
+  }
+}
+.hero__number__text {
+  font-family: 'DM Sans', sans-serif;
+  display: grid;
+  text-align: end;
+  @include font-style(400, 8px, 1.3, 0);
+  @include desktop {
+    font-size: 14px;
+  }
+  &--num {
+    font-family: 'Titan One', cursive;
+    z-index: 2;
+    text-align: center;
+    @include font-style(null, 28px, 1.14, 0.04em);
+    color: var(--main-text);
+    @include desktop {
+      font-size: 46px;
+    }
+  }
+}
+.hero__about {
+  display: none;
+  @include tablet {
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+    width: 114px;
+    position: absolute;
+    bottom: 56px;
+    left: 152px;
+    z-index: 7;
+    @include desktop {
+      bottom: 84px;
+      left: 229px;
+    }
+    &--text {
+      @include font-style(400, 8px, 1.5, 0);
+
+      @include desktop {
+        width: 200px;
+        @include font-style(null, 14px, 1.4em, 0);
+      }
+    }
+    &--button {
+      background-color: inherit;
+      border: none;
+      padding: 0;
+      margin-top: 7px;
+      cursor: pointer;
+    }
+  }
+}
+/////////////Photo-styles/////////////
 .eclipse {
   position: absolute;
-  right: -20px;
+  right: -6%;
   bottom: 75px;
+  @include tablet {
+    bottom: 40px;
+    left: 216px;
+  }
+  @include desktop {
+    bottom: 76px;
+    left: 501px;
+  }
 }
 .ice {
   position: absolute;
   bottom: 0;
-  right: 32px;
+  right: 7%;
+  @include tablet {
+    right: 271px;
+  }
+  @include desktop {
+    left: 636px;
+  }
+}
+.milk {
+  display: none;
+  @include tablet {
+    display: block;
+    position: absolute;
+    bottom: 16px;
+    @include desktop {
+      bottom: 60px;
+    }
+  }
+}
+.girl {
+  display: none;
+  @include tablet {
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    right: 0;
+    z-index: 8;
+  }
 }
