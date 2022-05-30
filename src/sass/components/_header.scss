@@ -83,9 +83,83 @@
 }
 
 .header__burger-icon {
+  &__content--top {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+  &__navigation {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    @media screen and (max-width: 1279px) {
+      display: none;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'DM Sans';
+    @include font-style(700, 16px, 1.31, null);
+  }
+  &__link {
+    color: var(--default);
+    &:focus,
+    &:hover {
+      color: var(--main-text);
+    }
+  }
+  &__button {
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: auto;
+    @media screen and (min-width: 768px) {
+      margin-right: 32px;
+    }
+    &-menu {
+      width: 160px;
+      height: 44px;
+      background-color: var(--default);
+      color: var(--main-text);
+      font-family: 'DM Sans';
+      @include font-style(700, 16px, 1.31, null);
+      border-radius: 22px;
+      cursor: pointer;
+      border: none;
+      &:focus,
+      &:hover {
+        background-color: var(--default-hover);
+      }
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+  &__burger-svg {
+    stroke: var(--main-text);
+  }
+  &__modal-vector {
+    margin-left: 12px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 37px;
+  }
 }
-
-// Частина HERO --------------------------------------------------
 .hero {
   position: relative;
   min-height: 444px;
