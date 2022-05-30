@@ -1,0 +1,181 @@
+.reviews {
+    margin-top: 80px;
+    margin-bottom: 48px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 80px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+}
+
+// .reviews__box {
+//     position: relative;
+// }
+
+.reviews__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews__photo {
+    margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 16px;
+    }
+}
+
+// .reviews__text {
+//     position: relative;
+//     min-width: 280px;
+//     background-color: var(--bg-fourth);
+//     padding: 43px 58px 26px 65px;
+// }
+
+// .reviews__gradient {
+//     position: absolute;
+//     min-width: 180px;
+//     height: 240px;
+//     left: 50px;
+//     top: 74px;
+//     background: repeating-linear-gradient(var(--line) 0px,
+//             var(--line) 1px,
+//             transparent 1px,
+//             transparent 31px);
+// }
+
+.reviews__text {
+    min-width: 280px;
+    max-height: 380px;
+    background-color: var(--bg-fourth);
+    padding: 43px 50px 17px 50px;
+    @media screen and (min-width: 768px) {
+        width: 620px;
+        padding: 37px 6px 36px 6px;
+    }
+    @media screen and (min-width: 1280px) {
+        width: 1034px;
+        padding: 32px 107px 31px 105px;
+    }
+}
+
+.reviews__description {
+    position: relative;
+    z-index: 1;
+    min-width: 157px;
+    height: auto;
+    padding: 0 8px 9px 15px;
+    font-family: DM Sans, sans-serif;
+    @include font-style (500, 12px, 2.58, null);
+    text-align: center;
+    color: var(--default-text-main);
+    background-size: auto;
+    background: repeating-linear-gradient(
+                transparent 0px,
+                transparent 30px,
+                var(--line) 1px,
+                var(--line) 31px);
+    @media screen and (min-width: 768px) {
+        min-width: 514px;
+        // height: 93px;
+        padding: 0px 49px 8px 45px;
+        @include font-style (500, 14px, 2.16, 0.04em);
+    }
+    @media screen and (min-width:1280px) {
+        min-width: 750px;
+        padding: 0px 35px 8px 37px;
+        @include font-style (500, 16px, 1.86, 0.04em);
+    }
+    &::before {
+            content: '';
+            display: inline-block;
+            width: 54px;
+            height: 40px;
+            background-image: url(/images/review-before.svg);
+    
+            position: absolute;
+            z-index: -1;
+            top: -13px;
+            left: 3px;     
+            @media screen and (min-width: 768px) {
+                top: -17px;
+                left: 0px;
+            }   
+        }
+}
+
+.reviews__list {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    @media screen and (min-width: 768px) {
+        margin-top: 4px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-top: 16px;
+    }
+}
+
+.reviews__dots {
+    &+& {
+        margin-left: 10px;
+    }
+}
+
+.reviews__dots::after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--main-text-hover);
+}
+
+.reviews__title {
+    font-family: DM Sans, sans-serif;
+    @include font-style (500, 14px, 1.86, null);
+    text-align: center;
+    color: var(--default-text-main);
+    margin-bottom: 16px;
+    @media screen and (min-width: 768px) {
+        @include font-style (500, 16px, 1.86, null);
+        margin-bottom: 32px;
+    }
+    @media screen and (min-width: 1280px) {
+        @include font-style (500, 20px, 1.86, null);
+    }
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+}
+
+.slick-dots li {
+    list-style: none;
+    margin-left: 18px;
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.slick-dots button {
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    border: transparent;
+}
+
+.slick-dots li.slick-active button {
+    background-color: transparent;
+    background-image: url(/images/review-home.svg);
+    border-radius: 0%;
+}

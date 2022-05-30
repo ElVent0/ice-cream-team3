@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
   font-family: 'Titan One', cursive;
@@ -5,6 +9,7 @@ body {
   background-color: var(--default);
   font-size: 14px;
   font-weight: 500;
+  scroll-behavior: smooth;
 }
 
 .container {

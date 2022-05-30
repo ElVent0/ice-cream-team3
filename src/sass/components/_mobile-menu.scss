@@ -1,0 +1,85 @@
+.mobile__menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  transition: transform 300ms, visibility 300ms;
+  background: #e17992;
+  padding-top: 60px;
+  z-index: 10000;
+}
+
+.close__btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+}
+
+.close__icon {
+  transition: all 500ms ease;
+  .close__btn:hover &,
+  .close__btn:focus & {
+    transform: rotate(180deg);
+    
+  }
+}
+
+.mobile__btn {
+  display: block;
+  width: 209px;
+  height: 44px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 19px;
+  background: #ffffff;
+  border: none;
+  border-radius: 22px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  @include font-style(700, 16px, 1.31, null);
+  align-items: center;
+  text-align: center;
+  color: var(--main-text);
+  transition: color 500ms ease;
+  cursor: pointer;
+    &:hover,
+    &:focus {
+      background-color: var(--default-hover);
+    }
+}
+
+.modal__vector {
+  margin-left: 15px;
+}
+
+.mobile__item {
+  padding: 11px 20px;
+  border-bottom: 1px solid #e18298;
+}
+
+.mobile__item:first-child {
+  border-top: 1px solid #e18298;
+}
+
+.mobile__link {
+  font-family: 'DM Sans';
+  font-style: normal;
+  @include font-style(700, 14px, 1.28, null);
+  color: #ffffff;
+  transition: color 500ms ease;
+  &:hover,
+  &:focus {
+    color: #d41443;
+  }
+}
+.is-hidden {
+  transform: translateX(100%);
+  pointer-events: none;
+  visibility: hidden;
+}

@@ -1,0 +1,308 @@
+.section--contacts-bg-color {
+  background-image: linear-gradient(
+    to bottom,
+    var(--default) 16%,
+    var(--main-bg-second) 16%,
+    var(--main-bg-second) 100%
+  );
+}
+
+.contacts {
+  margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+.contacts-card {
+  max-width: 480px;
+  background: var(--default);
+
+  padding: 40px 32px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 224px;
+    height: 528px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 395px;
+    height: 538px;
+    padding: 40px;
+  }
+}
+
+.contacts-card__category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 16px;
+  border-radius: 4px;
+
+  background: var(--bg-second);
+
+  font-family: 'DM Sans';
+  letter-spacing: 0.04em;
+  @include font-style(null, 12px, 1.86, null);
+  color: var(--default);
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+    width: 73px;
+    height: 28px;
+    font-size: 16px;
+  }
+
+  &--foodtruck {
+    width: 130px;
+    background: var(--bg-third);
+
+    @media screen and (min-width: 768px) {
+      width: 138px;
+    }
+  }
+}
+
+.contacts-card__info--underline {
+  border-bottom: 1px solid var(--line);
+}
+
+.contacts-card__city-name {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  @include font-style(500, 12px, 1.86, 0.04em);
+
+  color: var(--default-text-main);
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+
+.contacts-card__city-descr {
+  font-family: 'DM Sans';
+  @include font-style(null, 12px, 1.5, null);
+  color: #907e82;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 32px;
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+
+.contacts-card__timetable {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.contacts-card__working-time {
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
+}
+
+.working-time__days {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  @include font-style(500, 12px, 1.86, null);
+
+  color: var(--default-text-main);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+
+.working-time__time {
+  font-family: 'DM Sans';
+  @include font-style(500, 12px, 1.86, null);
+
+  color: var(--main-second);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+
+.contacts-card__connect {
+  font-family: 'DM Sans';
+  padding-top: 24px;
+  @include font-style(null, 12px, 1.5, null);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    font-size: 14px;
+    line-height: 1.83;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+
+.connect__tel,
+.connect__mail {
+  color: #907e82;
+  transition: all 500ms ease;
+  &:hover,
+  &:focus,
+  &:hover,
+  &:focus {
+    color: #ffa5ba;
+  }
+}
+
+.conteiner--contacts-padding {
+  padding-bottom: 48px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 40px;
+  }
+}
+
+.buttons-wrap {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    gap: 14.5px;
+  }
+
+  @media screen and (min-width: 768px) {
+    gap: 15px;
+  }
+}
+
+.contacts__links-btn {
+  text-align: center;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  width: 161px;
+  height: 44px;
+  border-radius: 22px;
+
+  font-family: 'DM Sans';
+  @include font-style(700, 16px, 1.31, null);
+
+  &--location {
+    background-color: var(--main-btn);
+    color: var(--default);
+    transition: all 500ms ease;
+
+    &:hover,
+    &:focus {
+      background-color: var(--main-text-hover);
+    }
+    @media screen and (min-width: 768px) {
+      width: 191px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 198px;
+    }
+  }
+
+  &--franchise {
+    background-color: var(--default);
+    color: var(--main-btn);
+    transition: all 500ms ease;
+
+    &:hover,
+    &:focus {
+      background-color: var(--default-hover);
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 174px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 180px;
+    }
+  }
+}
+
+.button__icon {
+  &--location {
+    vertical-align: middle;
+    margin-left: 8px;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 13.4px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-left: 13.62px;
+    }
+  }
+
+  &--franchise {
+    margin-left: 13.17px;
+
+    @media screen and (min-width: 1280px) {
+      margin-left: 13.62px;
+    }
+  }
+}

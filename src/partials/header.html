@@ -1,19 +1,44 @@
-<header class="header">
+<header class="header" id="home">
   <div class="container">
     <div class="header__content header__content--top">
-      <a href="" class="header__logo-link">
+      <a href="#">
         <img
+          srcset="./images/main-logo.png 1x, ./images/main-logo@2x.png 2x"
           src="/images/main-logo.png"
           alt="Логотип"
-          class="header__logo-image"
           width="200"
           height="50"
         />
       </a>
-      <nav class="header__navigation"></nav>
-      <button class="header__button" type="button" data-menu-button aria-expanded="false">
-        <svg width="20" height="12" aria-label="Перемикач мобільного меню">
-          <use href="" class="header__burger-icon"></use>
+      <nav class="header__navigation">
+        <ul class="header__list">
+          <li><a href="#" class="header__link">Home</a></li>
+          <li><a href="#advantages" class="header__link">About us</a></li>
+          <li><a href="#about" class="header__link">How it’s made?</a></li>
+          <li><a href="#products" class="header__link">Our products</a></li>
+          <li><a href="#contacts" class="header__link">Contact</a></li>
+        </ul>
+      </nav>
+      <button
+        class="header__button"
+        type="button"
+        data-menu-button
+        aria-expanded="false"
+        data-modal-open
+      >
+        <svg
+          width="20"
+          aria-label="Перемикач мобільного меню"
+          class="header__burger-svg"
+          viewBox="0 0 32 32"
+        >
+          <use href="./images/icon.svg#icon-Burger-btn"></use>
+        </svg>
+      </button>
+      <button type="button" class="header__button-menu">
+        Buy now
+        <svg width="5px" height="8px" class="header__modal-vector">
+          <use href="./images/icon.svg#icon-vector"></use>
         </svg>
       </button>
     </div>
@@ -24,8 +49,8 @@
           <h2 class="hero__title">ice cream <br />made with</h2>
           <h1 class="hero__aftertitle">passion</h1>
           <div class="hero__button">
-            <button type="button" class="hero__products">Products</button>
-            <button type="button" class="hero__meta">How it's made</button>
+            <a href="#products" class="hero__products">Products</a>
+            <a href="#about" class="hero__meta">How it's made</a>
           </div>
         </div>
         <div class="hero__number">
