@@ -84,10 +84,10 @@
   position: relative;
   min-height: 452px;
   @include tablet {
-    min-height: 364px;
+    min-height: 334px;
   }
   @include desktop {
-    min-height: 614px;
+    min-height: 594px;
   }
   &__title {
     @include font-style(400, 26px, 1.14em, 0);
@@ -121,6 +121,8 @@
   font-style: normal;
   align-items: center;
   text-align: center;
+  display: flex;
+  padding: 11px 23px;
   justify-content: center;
   border-radius: 20px;
   cursor: pointer;
