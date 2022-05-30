@@ -2,12 +2,20 @@
   padding-top: 40px;
   padding-bottom: 80px;
   background-color: var(--main-bg-second);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .advantages {
   &__item {
     display: inline-block;
-    max-width: 230px;
+    width: 230px;
     &:not(:last-child) {
       margin-bottom: 32px;
     }
