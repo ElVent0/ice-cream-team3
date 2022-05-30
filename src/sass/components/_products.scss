@@ -231,5 +231,11 @@
     text-align: center;
     background-image: url(/images/arrow-right.png);
     cursor: pointer;
+    transition: transform 500ms ease;
+        &:hover,
+        &:focus {
+        border: 1px solid var(--main-text);
+        transform: rotate(90deg);
+      }
   }
 }

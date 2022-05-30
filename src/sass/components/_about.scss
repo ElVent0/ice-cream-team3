@@ -198,6 +198,7 @@
   font-family: 'DM Sans';
   text-align: center;
   color: var(--main-text);
+  transition: all 500ms ease;
 
   &:hover,
   &:focus {

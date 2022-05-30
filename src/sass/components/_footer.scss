@@ -77,6 +77,7 @@
     align-items: center;
     justify-content: center;
     color: var(--default);
+    transition: all 500ms ease;
 
 
     &:hover,
@@ -117,15 +118,18 @@
     font-family: 'DM Sans';
     @include font-style(700, 12px, 1.8, 0);
     color: var(--main-text);
+    transition: all 500ms ease;
+    cursor: pointer;
     &:hover,
     &:focus {
         color: var(--default-text-second);
     }
-    cursor: pointer;
+
     margin-left: 2px;
      @media screen and (min-width: 768px) {
         @include font-style(700, 14px, 1.8, 0);
     }
+    
      @media screen and (min-width: 1280px) {
         @include font-style(700, 16px, 1.8, 0.02em);
     }
