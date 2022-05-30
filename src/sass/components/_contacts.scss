@@ -194,6 +194,7 @@
 .connect__tel,
 .connect__mail {
   color: #907e82;
+  transition: all 500ms ease;
   &:hover,
   &:focus,
   &:hover,
@@ -248,6 +249,7 @@
   &--location {
     background-color: var(--main-btn);
     color: var(--default);
+    transition: all 500ms ease;
 
     &:hover,
     &:focus {
@@ -265,6 +267,7 @@
   &--franchise {
     background-color: var(--default);
     color: var(--main-btn);
+    transition: all 500ms ease;
 
     &:hover,
     &:focus {

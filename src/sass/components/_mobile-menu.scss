@@ -18,7 +18,16 @@
   border-radius: 50%;
   cursor: pointer;
   background-color: transparent;
-  color: #ffffff;
+  color: #fff;
+}
+
+.close__icon {
+  transition: all 500ms ease;
+  .close__btn:hover &,
+  .close__btn:focus & {
+    transform: rotate(180deg);
+    
+  }
 }
 
 .mobile__btn {
@@ -37,6 +46,12 @@
   align-items: center;
   text-align: center;
   color: var(--main-text);
+  transition: color 500ms ease;
+  cursor: pointer;
+    &:hover,
+    &:focus {
+      background-color: var(--default-hover);
+    }
 }
 
 .modal__vector {
@@ -57,6 +72,7 @@
   font-style: normal;
   @include font-style(700, 14px, 1.28, null);
   color: #ffffff;
+  transition: color 500ms ease;
   &:hover,
   &:focus {
     color: #d41443;

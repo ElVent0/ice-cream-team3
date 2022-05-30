@@ -39,6 +39,7 @@
   -khtml-border-radius: 50px;
   text-decoration: none;
   z-index: 9999;
+  transition: all 500ms ease;
 }
 
 .button-top:hover {
@@ -74,6 +75,11 @@
 
 .header__burger-svg {
   stroke: var(--main-text);
+  transition: all 500ms ease;
+  &:hover,
+  &:focus {
+    stroke: var(--default);
+  }
 }
 
 .header__burger-icon {
@@ -113,6 +119,7 @@
   line-height: 10px;
   margin-right: 8px;
   padding: 11px 23px;
+  transition: all 500ms ease;
   &:focus,
   &:hover {
     background-color: var(--main-text-hover);
@@ -123,6 +130,7 @@
   background-color: var(--default);
   line-height: 10px;
   padding: 11px 23px;
+  transition: all 500ms ease;
   &:focus,
   &:hover {
     background-color: var(--default-hover);
