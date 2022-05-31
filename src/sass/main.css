@@ -446,13 +446,13 @@ a {
 
 .eclipse {
   position: absolute;
-  right: -6%;
+  right: -20px;
   bottom: 75px;
 }
 @media screen and (min-width: 480px) {
   .eclipse {
     bottom: 87px;
-    right: -5%;
+    right: -20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -469,9 +469,33 @@ a {
 }
 
 .ice {
+  -webkit-animation: animate_motion 5s 0s both infinite;
+          animation: animate_motion 5s 0s both infinite;
   position: absolute;
   bottom: 0;
   right: 7%;
+}
+@-webkit-keyframes animate_motion {
+  0%, 20% {
+    transform: translate3d(0, 0, 0);
+  }
+  10%, 14%, 18%, 2%, 6% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  12%, 16%, 4%, 8% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+@keyframes animate_motion {
+  0%, 20% {
+    transform: translate3d(0, 0, 0);
+  }
+  10%, 14%, 18%, 2%, 6% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  12%, 16%, 4%, 8% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
 @media screen and (min-width: 768px) {
   .ice {
