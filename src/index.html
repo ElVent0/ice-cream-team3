@@ -25,20 +25,22 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/header.html"></include>
-    <main>
-      <include src="./partials/mobile-menu.html"></include>
-      <include src="./partials/products.html"></include>
-      <include src="./partials/about.html"></include>
-      <include src="./partials/advantages.html"></include>
-      <include src="./partials/gallery.html"></include>
-      <include src="./partials/customer-reviews.html"></include>
-      <include src="./partials/contacts.html"></include>
-      <include src="./partials/modals.html"></include>
-    </main>
-    <include src="./partials/footer.html"></include>
-    <include src="./partials/features.html"></include>
+    <div class="">
+      <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+      <include src="./partials/header.html"></include>
+      <main>
+        <include src="./partials/mobile-menu.html"></include>
+        <include src="./partials/products.html"></include>
+        <include src="./partials/about.html"></include>
+        <include src="./partials/advantages.html"></include>
+        <include src="./partials/gallery.html"></include>
+        <include src="./partials/customer-reviews.html"></include>
+        <include src="./partials/contacts.html"></include>
+        <include src="./partials/modals.html"></include>
+      </main>
+      <include src="./partials/footer.html"></include>
+      <include src="./partials/features.html"></include>
+    </div>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
 
@@ -48,10 +50,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./menu.js"></script>
     <script src="./modal.js"></script>
