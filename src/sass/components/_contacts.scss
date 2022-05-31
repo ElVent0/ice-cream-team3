@@ -93,6 +93,14 @@
   border-bottom: 1px solid var(--line);
 }
 
+.contacts-card__city {
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 32px;
+  }
+}
+
 .contacts-card__city-name {
   font-family: 'DM Sans';
   font-weight: 500;
@@ -118,10 +126,8 @@
   font-family: 'DM Sans';
   @include font-style(null, 12px, 1.5, null);
   color: #907e82;
-  padding-bottom: 24px;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 32px;
     font-size: 14px;
   }
 
@@ -203,13 +209,13 @@
 
 .connect__tel,
 .connect__mail {
-  color: #907e82;
+  color: var(--default-text-second);
   transition: all 500ms ease;
   &:hover,
   &:focus,
   &:hover,
   &:focus {
-    color: #ffa5ba;
+    color: var(--main-second);
   }
 }
 
