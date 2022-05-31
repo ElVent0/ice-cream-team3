@@ -12,7 +12,7 @@
     display: flex;
     margin-right: auto;
     margin-left: auto;
-    @media screen and (max-width: 1279px) {
+    @media screen and (max-width: 1280px) {
       display: none;
     }
   }
@@ -26,7 +26,7 @@
   }
   &__link {
     color: var(--default);
-     transition: color 500ms ease;
+    transition: color 500ms ease;
     &:focus,
     &:hover {
       color: var(--main-text);
@@ -43,6 +43,8 @@
     justify-content: center;
     cursor: pointer;
     margin-left: auto;
+    position: relative;
+    z-index: 9999;
     @media screen and (min-width: 768px) {
       margin-right: 32px;
     }

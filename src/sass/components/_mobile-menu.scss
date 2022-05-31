@@ -1,7 +1,7 @@
 .mobile__menu {
   position: fixed;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   top: 0;
   transition: transform 300ms, visibility 300ms;
   background: #e17992;
@@ -9,8 +9,11 @@
   z-index: 10000;
 
   @media screen and (min-width: 768px) {
-    width: 254px;
+    width: 40%;
     right: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
   }
 }
 
@@ -24,6 +27,9 @@
   cursor: pointer;
   background-color: transparent;
   color: #fff;
+  @media screen and (min-width: 768px) {
+    right: 32px;
+  }
 }
 
 .close__icon {
@@ -31,7 +37,6 @@
   .close__btn:hover &,
   .close__btn:focus & {
     transform: rotate(180deg);
-    
   }
 }
 
@@ -53,10 +58,10 @@
   color: var(--main-text);
   transition: color 500ms ease;
   cursor: pointer;
-    &:hover,
-    &:focus {
-      background-color: var(--default-hover);
-    }
+  &:hover,
+  &:focus {
+    background-color: var(--default-hover);
+  }
 }
 
 .modal__vector {
