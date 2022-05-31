@@ -10,6 +10,10 @@
   }
 
   background-color: var(--main-bg-second);
+}
+
+.about__container {
+  align-items: center;
   @media screen and (max-width: 768px) {
     background-image: url('/images/Advantages-bg-image-mob.png');
     background-repeat: no-repeat;
@@ -34,10 +38,6 @@
       background-position: center;
     }
   }
-}
-
-.about__container {
-  align-items: center;
 }
 
 .about__title-box {
