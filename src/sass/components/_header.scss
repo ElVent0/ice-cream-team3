@@ -26,6 +26,7 @@
   }
   &__link {
     color: var(--default);
+     transition: color 500ms ease;
     &:focus,
     &:hover {
       color: var(--main-text);
@@ -55,6 +56,7 @@
       border-radius: 22px;
       cursor: pointer;
       border: none;
+      transition: all 500ms ease;
       &:focus,
       &:hover {
         background-color: var(--default-hover);
@@ -122,6 +124,8 @@
   display: flex;
   align-items: center;
   text-align: center;
+  display: flex;
+  padding: 11px 23px;
   justify-content: center;
   padding: 11px 23px;
   border-radius: 20px;
@@ -136,10 +140,10 @@
   background-color: var(--main-text);
   line-height: 10px;
   margin-right: 8px;
+  transition: all 500ms ease;
   &:hover,
   &:focus {
     background-color: var(--main-text-hover);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   @media screen and (min-width: 1280px) {
     width: 107px;
@@ -149,10 +153,10 @@
   color: var(--main-text);
   background-color: var(--default);
   line-height: 10px;
+  transition: all 500ms ease;
   &:hover,
   &:focus {
     background-color: var(--default-hover);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   @media screen and (min-width: 1280px) {
     width: 138px;
