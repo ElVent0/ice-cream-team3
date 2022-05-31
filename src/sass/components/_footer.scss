@@ -1,5 +1,6 @@
 .footer {
     background: var(--main-bg-second);
+
 }
 
 .footer-content {
@@ -52,12 +53,11 @@
     display: flex;
     justify-content: flex-end;
     cursor: pointer;
-    margin-top: 40px;
+    padding-top: 40px;
      @media screen and (min-width: 768px) {
-         margin-top: 0;
+        padding-top: 0;
      }
  }
-
 
 .scl-media__item + .scl-media__item {
   margin-left: 28px;
@@ -90,22 +90,17 @@
   fill: currentColor;
 }
 
-.contact-number {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 40px;
-    margin-bottom: 40px;
-     @media screen and (min-width: 768px) {
-         margin-bottom: 0;
-     }
- }
 
 .contact-number__text {
     font-family: 'DM Sans';
     @include font-style(700, 12px, 1.8, 0);
     color: var(--default-text-main);
+    text-align: right;
+    padding-top: 40px;
+    padding-bottom: 40px;
     @media screen and (min-width: 768px) {
         @include font-style(700, 14px, 1.8, 0);
+        padding-bottom: 0;
     }
     @media screen and (min-width: 1280px) {
         @include font-style(700, 16px, 1.8, 0.02em);
@@ -113,7 +108,6 @@
 }
 
 .contact-number__link {
-    display: block;
     text-decoration: none;
     font-family: 'DM Sans';
     @include font-style(700, 12px, 1.8, 0);
@@ -124,8 +118,6 @@
     &:focus {
         color: var(--default-text-second);
     }
-
-    margin-left: 2px;
      @media screen and (min-width: 768px) {
         @include font-style(700, 14px, 1.8, 0);
     }
