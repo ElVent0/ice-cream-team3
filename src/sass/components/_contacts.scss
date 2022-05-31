@@ -5,6 +5,13 @@
     var(--main-bg-second) 16%,
     var(--main-bg-second) 100%
   );
+  padding-bottom: 48px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 120px;
+  }
 }
 
 .contacts {
@@ -14,6 +21,9 @@
     display: flex;
     align-items: center;
     gap: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 60px;
   }
 }
 
@@ -200,13 +210,6 @@
   &:hover,
   &:focus {
     color: #ffa5ba;
-  }
-}
-
-.conteiner--contacts-padding {
-  padding-bottom: 48px;
-  @media screen and (min-width: 768px) {
-    padding-bottom: 40px;
   }
 }
 
