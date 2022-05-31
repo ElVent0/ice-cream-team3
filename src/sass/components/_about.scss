@@ -1,47 +1,46 @@
 .about {
- background-color: var(--main-bg-second);
-  
- 
- @media screen and (max-width: 768px) {    
-  background-image: url("/images/Advantages-bg-image-mob.png");
-  background-repeat: no-repeat;
-  background-position: 0 567px;
-  background-size: contain;
-  @media (min-device-pixel-ratio: 2),
-         (min-resolution: 192dpi),
-         (min-resolution: 2dppx) {
-    background-image: url("/images/Advantages-bg-image-mob@2x.png");
+  padding-top: 40px;
+    
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
   }
+    
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
   }
  
+  background-color: var(--main-bg-second);
+  @media screen and (max-width: 768px) {
+    background-image: url("/images/Advantages-bg-image-mob.png");
+    background-repeat: no-repeat;
+    background-position: 0 534px;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 232dpi),
+    (min-resolution: 2dppx) {
+      background-image: url("/images/Advantages-bg-image-mob@2x.png");
+    }
+  }
+
     @media screen and (min-width: 1280px) {
       background-image: url("/images/Advantages-bg-image.png");
-        background-repeat: no-repeat;
-        background-position:0 225px;
-        background-size: contain;
-      
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-          background-image: url("/images/Advantages-bg-image@2x.png");
-        }
+      background-repeat: no-repeat;
+      background-position: center 225px;
+      background-size: contain;
+
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url("/images/Advantages-bg-image@2x.png");
+      }
     }
+
 }
 
 .about__container {
-
-  padding-top: 40px;
   align-items: center;
-
-  @media screen and (min-width: 768px) {
-    padding-top: 20px;
-    padding-right: 34px;
-  }
-
-    @media screen and (min-width: 1280px) {
-    padding-top: 60px;
-    }
-
+  
 }
 
 .about__title-box {
@@ -49,6 +48,15 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-bottom: 32px;
+  
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+  
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 60px;
+  }
 }
 
 .about__title-label {
@@ -64,9 +72,9 @@
     @include font-style(400, 26px, 1.15, null); 
   }
 
-    @media screen and (min-width: 1280px) {
-      @include font-style(400, 30px, 1.13, 0.04em);
-    }
+  @media screen and (min-width: 1280px) {
+    @include font-style(400, 30px, 1.13, 0.04em);
+  }
 }
 
 .about__title {
@@ -74,7 +82,6 @@
   @media screen and (max-width: 767px) {
    max-width: 200px; 
   }
-  margin-bottom: 32px;
 
   @include font-style(400, 34px, 1.2, 0.04em);
   text-align: center;
@@ -82,42 +89,35 @@
   color: var(--main-text);
 
   @media screen and (min-width: 768px) {
+    @include font-style(400, 48px, 1.15, null);
+  }
 
-      margin-bottom: 40px;
-  
-      @include font-style(400, 48px, 1.15, null);
-    }
-
-        @media screen and (min-width: 1280px) {
-          margin-bottom: 60px;
-          
-          @include font-style(400, 58px, 1.14, 0.06em);
-        }
+  @media screen and (min-width: 1280px) {
+    @include font-style(400, 58px, 1.14, 0.06em);
+  }
 }
 
 .about__content {
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: flex-start;
-   
   }
 
-    @media screen and (min-width: 1280px) {
-      align-items: center;
-    }
-  
+  @media screen and (min-width: 1280px) {
+    align-items: center;
+  }  
 }
+
 .about__img {
   display: block;
   width: 100%;
   max-width: 280px;
   margin-bottom: 40px;
 
-
   @media screen and (min-width: 768px) {
-   max-width: 336px;
-   margin-bottom: 0;
-   margin-right: 32px;
+    max-width: 336px;
+    margin-bottom: 0;
+    margin-right: 32px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -127,68 +127,57 @@
 }
 
 .about__details {
- 
-}
-.about__list {
-  list-style: none;
-}
-.about__item{
+  padding-right: 60px;
   
-  &:first-child {
-    margin-bottom: 31px;
-@media screen and (min-width: 768px) {
-    margin-bottom: 29px;
+  @media screen and (min-width: 768px) {
+    padding-right: 2px;
   }
 
+  @media screen and (min-width: 1280px) {
+    padding-right: 145px;
   }
-  &:nth-child(n+3) {
-    margin-top: 20px;
-
-    @media screen and (min-width: 768px) {
-      margin-top: 23px;     
-    }
-  }
-
-     width: 220px;
-  
-     @media screen and (min-width: 768px) {
-       width: 334px;
-     }
-  
-     @media screen and (min-width: 768px) {
-       width: 463px;
-     }
 }
-
 
 .about__desc {
-  
+  margin-bottom: 20px;
   @include font-style(500, 12px, 1.6, null);
   font-family: 'DM Sans';
   color: var(--default-text-second);
 
   @media screen and (min-width: 768px) {
-    @include font-style(500, 14px, 1.76, 0.04em);
-    
+    margin-bottom: 24px;
+    @include font-style(500, 14px, 1.76, 0.04em);  
   }
 
-    @media screen and (min-width: 1280px) {
-      @include font-style(500, 14px, 1.93, 0.04em);
-    }
+  @media screen and (min-width: 1280px) {
+    @include font-style(500, 14px, 1.93, 0.04em);
+    margin-bottom: 40px; 
+  }
 
 }
 
+.about__desc--last {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+
 .about__desc--bold {
+  margin-bottom: 26px;
   color: var(--default-text-main);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 23px;
+  }
   @media screen and (min-width: 1280px) {
+    margin-bottom: 32px;
     @include font-style(500, 16px, 1.75, 0.04em);
-    }
+  }
 }
 
 .about__button {
   display: inline-flex;
   align-items: center;
-  margin-top: 20px;
   min-width: 176px;
   height: 44px;
   padding: 17px 37px 17px 43px;
@@ -208,13 +197,8 @@
     background-color: var(--default-hover);
   }
 
-  @media screen and (min-width: 768px) {
-    margin-top: 40px;
-    @include font-style(700, 16px, 1.31, null);
-  }
 }
 
 .about__button-icon {
   margin-left: 13px;
-  padding: 0;
 }
