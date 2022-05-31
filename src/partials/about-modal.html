@@ -1,26 +1,36 @@
-<div class="about__backdrop about__backdrop--is-hidden" data-modal>
-  <div class="about__modal">
-    <button class="about__modal__button" data-modal-close>
+<div class="about-modal__backdrop is-hidden" data-modal-about>
+  <div class="about-modal">
+    <button class="about--modal__button" data-modal-about-close>
       <svg width="15" height="15">
-        <use href="/imagesg/icon.svg#icon-Burger-btn-close"></use>
+        <use href="/images/icon.svg#icon-Burger-btn-close"></use>
       </svg>
     </button>
-    <ul>
-      <li>
+    <ul class="about-modal__list">
+      <li class="about-modal__item">
         <img
-          srcset="/src/images/ab-mod.jpg 1x, /src/images/ab-mod@2x.jpg 2x"
-          src="/src/images/ab-mod.jpg"
-          alt=""
+          class="about-modal__image"
+          srcset="/images/ab-mod.jpg 1x, /images/ab-mod@2x.jpg 2x"
+          src="/images/ab-mod.jpg"
+          alt="ice-cream in cup"
         />
-        <p></p>
+        <p class="about-modal__text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, deserunt ipsum quasi nisi
+          nulla totam qui tempora. Fuga distinctio omnis hic veniam reprehenderit, ipsam eum magni
+          sit doloremque. Laboriosam, porro?
+        </p>
       </li>
-      <li>
+      <li class="about-modal__item">
         <img
-          srcset="/src/images/ab-mod2.jpg 1x, /src/images/ab-mod2@2x.jpg 2x"
-          src="/src/images/ab-mod2.jpg"
-          alt=""
+          class="about-modal__image"
+          srcset="/images/modal-about.jpg 1x, /images/modal-about@2x.jpg 2x"
+          src="/images/modal-about.jpg"
+          alt="ice-cream"
         />
-        <p></p>
+        <p class="about-modal__text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, deserunt ipsum quasi nisi
+          nulla totam qui tempora. Fuga distinctio omnis hic veniam reprehenderit, ipsam eum magni
+          sit doloremque. Laboriosam, porro?
+        </p>
       </li>
     </ul>
   </div>
