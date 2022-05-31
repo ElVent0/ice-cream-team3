@@ -255,6 +255,10 @@
   position: absolute;
   right: -6%;
   bottom: 75px;
+  @media screen and (min-width: 480px) {
+    bottom: 87px;
+    right: -5%;
+  }
   @media screen and (min-width: 768px) {
     bottom: 40px;
     left: 216px;
