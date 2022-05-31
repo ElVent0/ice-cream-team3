@@ -7,6 +7,7 @@
     listItemHow: document.querySelector('[data-modal-how]'),
     listItemProducts: document.querySelector('[data-modal-products]'),
     listItemContacts: document.querySelector('[data-modal-contacts]'),
+    body: document.querySelector('[body-scroll]'),
 
     modal: document.querySelector('[data-modal]'),
   };
@@ -19,5 +20,6 @@
   refs.listItemContacts.addEventListener('click', toggleModal);
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+    refs.body.classList.toggle('no-scroll');
   }
 })();

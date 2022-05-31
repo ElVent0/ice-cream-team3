@@ -13,6 +13,7 @@
     width: 40%;
     right: 0;
   }
+
   @media screen and (min-width: 1280px) {
     display: none;
   }
@@ -28,6 +29,7 @@
   cursor: pointer;
   background-color: transparent;
   color: #fff;
+
   @media screen and (min-width: 768px) {
     right: 32px;
   }
@@ -35,6 +37,7 @@
 
 .close__icon {
   transition: all 500ms ease;
+
   .close__btn:hover &,
   .close__btn:focus & {
     transform: rotate(180deg);
@@ -59,6 +62,7 @@
   color: var(--main-text);
   transition: color 500ms ease;
   cursor: pointer;
+
   &:hover,
   &:focus {
     background-color: var(--default-hover);
@@ -84,13 +88,25 @@
   @include font-style(700, 14px, 1.28, null);
   color: #ffffff;
   transition: color 500ms ease;
+
   &:hover,
   &:focus {
     color: #d41443;
   }
 }
+
 .is-hidden {
   transform: translateX(100%);
   pointer-events: none;
   visibility: hidden;
+}
+
+
+// ----scroll off---
+.no-scroll {
+  overflow: hidden;
+
+  @include tablet {
+    overflow: auto;
+  }
 }
