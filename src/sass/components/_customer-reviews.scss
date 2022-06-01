@@ -10,10 +10,6 @@
     }
 }
 
-// .reviews__box {
-//     position: relative;
-// }
-
 .reviews__info {
     display: flex;
     flex-direction: column;
@@ -21,6 +17,12 @@
 }
 
 .reviews__photo {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     margin-bottom: 32px;
     @media screen and (min-width: 768px) {
         margin-bottom: 20px;
@@ -30,24 +32,45 @@
     }
 }
 
-// .reviews__text {
-//     position: relative;
-//     min-width: 280px;
-//     background-color: var(--bg-fourth);
-//     padding: 43px 58px 26px 65px;
-// }
+.reviews__photo1{
+    background-image: url(/images/lera-konotop.jpg);
+}
 
-// .reviews__gradient {
-//     position: absolute;
-//     min-width: 180px;
-//     height: 240px;
-//     left: 50px;
-//     top: 74px;
-//     background: repeating-linear-gradient(var(--line) 0px,
-//             var(--line) 1px,
-//             transparent 1px,
-//             transparent 31px);
-// }
+.reviews__photo2 {
+    background-image: url(/images/vasyl-kyiv.jpg);
+}
+
+.reviews__photo3 {
+    background-image: url(/images/volodymyr-kyiv.jpg);
+}
+
+.reviews__photo4 {
+    background-image: url(/images/olexsandr-rivne.jpg);
+}
+
+.reviews__photo5 {
+    background-image: url(/images/tetiana-lutsk.jpg);
+}
+
+.reviews__photo6 {
+    background-image: url(/images/andriy-cherkassy.jpg);
+}
+
+.reviews__photo7 {
+    background-image: url(/images/taras-lutsk.jpg);
+}
+
+.reviews__photo8 {
+    background-image: url(/images/andriy-vinnytsia.jpg);
+}
+
+.reviews__photo9 {
+    background-image: url(/images/dmytro-boryspil.jpg);
+}
+
+.reviews__photo10 {
+    background-image: url(/images/lilia.jpg);
+}
 
 .reviews__text {
     min-width: 280px;
@@ -62,6 +85,10 @@
         width: 1034px;
         padding: 32px 107px 31px 105px;
     }
+}
+
+.reviews__span {
+    color: var(--main-text-hover);
 }
 
 .reviews__description {
