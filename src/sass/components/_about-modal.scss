@@ -59,6 +59,7 @@
     width: 704px;
     padding: 32px;
   }
+
   @media screen and (min-width: 1280px) {
     width: 1000px;
     padding: 32px;
@@ -97,16 +98,20 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+
     &:not(:last-child) {
       margin-bottom: 32px;
     }
+
     @include font-style(500, 14px, 1.76, 0.04em);
 
     &:nth-child(2n + 1) .about-modal__image {
       margin-right: 32px;
     }
+
     &:nth-child(2n) {
       flex-direction: row-reverse;
+
       .about-modal__image {
         margin-left: 32px;
       }
@@ -118,12 +123,14 @@
     margin-bottom: 40px;
     align-items: center;
   }
+
   &:last-child {
     @media screen and (max-width: 768px) {
       display: none;
     }
   }
 }
+
 .about-modal__image {
   display: block;
   width: 100%;
