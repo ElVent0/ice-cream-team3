@@ -2,7 +2,7 @@
   const refs = {
     openModalBtn: document.querySelector('[data-modal-about-open]'),
     closeModalBtn: document.querySelector('[data-modal-about-close]'),
-    modal: document.querySelector('[data-modal-about]'),
+    modal: document.querySelector('.about-modal__backdrop'),
     body: document.querySelector('body'),
   };
 
