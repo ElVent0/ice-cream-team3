@@ -22,8 +22,9 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="body-scroll">
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <include src="./partials/header.html"></include>
     <main>
@@ -49,15 +50,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./menu.js"></script>
     <script src="./modal.js"></script>
+    <script src="./js/modal-buy2.js"></script>
     <script src="./progress.js"></script>
-
     <script src="./js/about-modal.js"></script>
+    <script src="./js/modal-buy.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
