@@ -7,7 +7,7 @@
     listItemHow: document.querySelector('[data-modal-how]'),
     listItemProducts: document.querySelector('[data-modal-products]'),
     listItemContacts: document.querySelector('[data-modal-contacts]'),
-    body: document.querySelector('[body-scroll]'),
+    body: document.querySelector('.body-scroll'),
 
     modal: document.querySelector('[data-modal]'),
   };
